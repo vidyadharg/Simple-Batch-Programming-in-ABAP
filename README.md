@@ -26,6 +26,7 @@ Finally, call `run( )` with all its optional parameters and the transaction will
 Example
 -------
 Here is an example of calling the class builder to display a class.
+
     REPORT z_bdc_example.
     
     START-OF-SELECTION.
