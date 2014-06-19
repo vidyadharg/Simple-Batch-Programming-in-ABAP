@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nugget name="ZEEGOR">
+ <CLAS CLSNAME="ZCL_BDC_FIELD" VERSION="1" LANGU="E" DESCRIPT="Field Operation" CATEGORY="00" EXPOSURE="2" STATE="1" RELEASE="0" CLSFINAL="X" CLSCCINCL="X" FIXPT="X" UNICODE="X" CLSBCCAT="00" DURATION_TYPE="0 " RISK_LEVEL="0 ">
+  <implementing CLSNAME="ZCL_BDC_FIELD" REFCLSNAME="ZIF_BDC_OPERATION" VERSION="1" EXPOSURE="2" STATE="1" RELTYPE="1" EDITORDER="1 "/>
+  <localImplementation>*&quot;* use this source file for the definition and implementation of
+*&quot;* local helper classes, interface definitions and type
+*&quot;* declarations</localImplementation>
+  <localTypes>*&quot;* use this source file for any type of declarations (class
+*&quot;* definitions, interfaces or type declarations) you need for
+*&quot;* components in the private section</localTypes>
+  <localMacros>*&quot;* use this source file for any macro definitions you need
+*&quot;* in the implementation part of the class</localMacros>
+  <attribute CLSNAME="ZCL_BDC_FIELD" CMPNAME="BDC_LINE" VERSION="1" LANGU="E" ALIAS="X" EXPOSURE="2" STATE="1" EDITORDER="0 " ATTDECLTYP="0" ATTEXPVIRT="0" TYPTYPE="0" SRCROW1="0 " SRCCOLUMN1="0 " SRCROW2="0 " SRCCOLUMN2="0 " REFCLSNAME="ZIF_BDC_OPERATION" REFCMPNAME="BDC_LINE" TYPESRC_LENG="0 "/>
+  <method CLSNAME="ZCL_BDC_FIELD" CMPNAME="CONSTRUCTOR" VERSION="1" LANGU="E" DESCRIPT="CONSTRUCTOR" EXPOSURE="2" STATE="1" EDITORDER="1 " DISPID="0 " MTDTYPE="2" MTDDECLTYP="0" BCMTDCAT="00" BCMTDSYN="0">
+   <parameter CLSNAME="ZCL_BDC_FIELD" CMPNAME="CONSTRUCTOR" SCONAME="FIELD" VERSION="1" LANGU="E" DESCRIPT="Field name" CMPTYPE="1" MTDTYPE="2" EDITORDER="1 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="CSEQUENCE"/>
+   <source>method CONSTRUCTOR.
+  bdc_line-fnam = field.
+endmethod.</source>
+  </method>
+  <method CLSNAME="ZCL_BDC_FIELD" CMPNAME="ROW" VERSION="1" LANGU="E" DESCRIPT="Set row of table control or step loop. Chainable." EXPOSURE="2" STATE="1" EDITORDER="3 " DISPID="0 " MTDTYPE="0" MTDDECLTYP="0" BCMTDCAT="00" BCMTDSYN="0">
+   <parameter CLSNAME="ZCL_BDC_FIELD" CMPNAME="ROW" SCONAME="ROW_NUM" VERSION="1" LANGU="E" CMPTYPE="1" MTDTYPE="0" EDITORDER="1 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="N"/>
+   <parameter CLSNAME="ZCL_BDC_FIELD" CMPNAME="ROW" SCONAME="SELF" VERSION="1" LANGU="E" DESCRIPT="Field Operation" CMPTYPE="1" MTDTYPE="0" EDITORDER="2 " DISPID="0 " PARDECLTYP="3" PARPASSTYP="0" TYPTYPE="3" TYPE="ZCL_BDC_FIELD"/>
+   <source>method ROW.
+  bdc_line-fnam = bdc_line-fnam &amp;&amp; row_num.
+endmethod.</source>
+  </method>
+  <method CLSNAME="ZCL_BDC_FIELD" CMPNAME="WITH" VERSION="1" LANGU="E" DESCRIPT="Set Value" EXPOSURE="2" STATE="1" EDITORDER="2 " DISPID="0 " MTDTYPE="0" MTDDECLTYP="0" BCMTDCAT="00" BCMTDSYN="0">
+   <parameter CLSNAME="ZCL_BDC_FIELD" CMPNAME="WITH" SCONAME="VALUE" VERSION="1" LANGU="E" DESCRIPT="BDC field value" CMPTYPE="1" MTDTYPE="0" EDITORDER="1 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="CSEQUENCE"/>
+   <source>method WITH.
+  bdc_line-fval = value.
+endmethod.</source>
+  </method>
+ </CLAS>
+ <CLAS CLSNAME="ZCL_BDC_SCREEN" VERSION="1" LANGU="E" DESCRIPT="Screen (Dynpro) Operation" CATEGORY="00" EXPOSURE="2" STATE="1" RELEASE="0" CLSFINAL="X" CLSCCINCL="X" FIXPT="X" UNICODE="X" CLSBCCAT="00" DURATION_TYPE="0 " RISK_LEVEL="0 ">
+  <implementing CLSNAME="ZCL_BDC_SCREEN" REFCLSNAME="ZIF_BDC_OPERATION" VERSION="1" EXPOSURE="2" STATE="1" RELTYPE="1" EDITORDER="1 "/>
+  <localImplementation>*&quot;* use this source file for the definition and implementation of
+*&quot;* local helper classes, interface definitions and type
+*&quot;* declarations</localImplementation>
+  <localTypes>*&quot;* use this source file for any type of declarations (class
+*&quot;* definitions, interfaces or type declarations) you need for
+*&quot;* components in the private section</localTypes>
+  <localMacros>*&quot;* use this source file for any macro definitions you need
+*&quot;* in the implementation part of the class</localMacros>
+  <attribute CLSNAME="ZCL_BDC_SCREEN" CMPNAME="BDC_LINE" VERSION="1" LANGU="E" ALIAS="X" EXPOSURE="2" STATE="1" EDITORDER="0 " ATTDECLTYP="0" ATTEXPVIRT="0" TYPTYPE="0" SRCROW1="0 " SRCCOLUMN1="0 " SRCROW2="0 " SRCCOLUMN2="0 " REFCLSNAME="ZIF_BDC_OPERATION" REFCMPNAME="BDC_LINE" TYPESRC_LENG="0 "/>
+  <method CLSNAME="ZCL_BDC_SCREEN" CMPNAME="CONSTRUCTOR" VERSION="1" LANGU="E" DESCRIPT="CONSTRUCTOR" EXPOSURE="2" STATE="1" EDITORDER="1 " DISPID="0 " MTDTYPE="2" MTDDECLTYP="0" BCMTDCAT="00" BCMTDSYN="0">
+   <parameter CLSNAME="ZCL_BDC_SCREEN" CMPNAME="CONSTRUCTOR" SCONAME="SCREEN" VERSION="1" LANGU="E" DESCRIPT="BDC Screen number" CMPTYPE="1" MTDTYPE="2" EDITORDER="1 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="N"/>
+   <source>method CONSTRUCTOR.
+  bdc_line-dynpro = screen.
+  bdc_line-dynbegin = &apos;X&apos;.
+endmethod.</source>
+  </method>
+  <method CLSNAME="ZCL_BDC_SCREEN" CMPNAME="IN_PROGRAM" VERSION="1" LANGU="E" DESCRIPT="Set Program Name" EXPOSURE="2" STATE="1" EDITORDER="2 " DISPID="0 " MTDTYPE="0" MTDDECLTYP="0" BCMTDCAT="00" BCMTDSYN="0">
+   <parameter CLSNAME="ZCL_BDC_SCREEN" CMPNAME="IN_PROGRAM" SCONAME="PROGRAM" VERSION="1" LANGU="E" DESCRIPT="BDC module pool" CMPTYPE="1" MTDTYPE="0" EDITORDER="1 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="CSEQUENCE"/>
+   <source>method IN_PROGRAM.
+  bdc_line-program = program.
+endmethod.</source>
+  </method>
+ </CLAS>
+ <CLAS CLSNAME="ZCL_BDC_SESSION" VERSION="1" LANGU="E" DESCRIPT="Batch Input Session" CATEGORY="00" EXPOSURE="0" STATE="1" RELEASE="0" CLSFINAL="X" CLSCCINCL="X" FIXPT="X" UNICODE="X" RSTAT="K" CLSBCCAT="00" DURATION_TYPE="0 " RISK_LEVEL="0 ">
+  <localImplementation>*&quot;* use this source file for the definition and implementation of
+*&quot;* local helper classes, interface definitions and type
+*&quot;* declarations</localImplementation>
+  <localTypes>*&quot;* use this source file for any type of declarations (class
+*&quot;* definitions, interfaces or type declarations) you need for
+*&quot;* components in the private section</localTypes>
+  <localMacros>*&quot;* use this source file for any macro definitions you need
+*&quot;* in the implementation part of the class</localMacros>
+  <typeUsage CLSNAME="ZCL_BDC_SESSION" TYPEGROUP="ABAP" VERSION="1" TPUTYPE="0" IMPLICIT="X"/>
+  <forwardDeclaration>ABAP</forwardDeclaration>
+  <attribute CLSNAME="ZCL_BDC_SESSION" CMPNAME="MESSAGES" VERSION="1" LANGU="E" DESCRIPT="Messages returned from a BDC session" EXPOSURE="2" STATE="1" EDITORDER="4 " ATTDECLTYP="0" ATTRDONLY="X" ATTEXPVIRT="0" TYPTYPE="1" TYPE="Z_BDC_MESSAGES" SRCROW1="0 " SRCCOLUMN1="0 " SRCROW2="0 " SRCCOLUMN2="0 " TYPESRC_LENG="0 "/>
+  <attribute CLSNAME="ZCL_BDC_SESSION" CMPNAME="OPERATIONS" VERSION="1" LANGU="E" DESCRIPT="Array of Batch Input Operations" EXPOSURE="0" STATE="1" EDITORDER="2 " ATTDECLTYP="0" ATTEXPVIRT="0" TYPTYPE="1" TYPE="Z_BDC_OPERATIONS" SRCROW1="0 " SRCCOLUMN1="0 " SRCROW2="0 " SRCCOLUMN2="0 " TYPESRC_LENG="0 "/>
+  <attribute CLSNAME="ZCL_BDC_SESSION" CMPNAME="OPTIONS" VERSION="1" LANGU="E" DESCRIPT="Parameter string for runtime of CALL TRANSACTION USING..." EXPOSURE="0" STATE="1" EDITORDER="3 " ATTDECLTYP="0" ATTEXPVIRT="0" TYPTYPE="1" TYPE="CTU_PARAMS" SRCROW1="0 " SRCCOLUMN1="0 " SRCROW2="0 " SRCCOLUMN2="0 " TYPESRC_LENG="0 "/>
+  <attribute CLSNAME="ZCL_BDC_SESSION" CMPNAME="SCREEN_HIDE_ALL" VERSION="1" LANGU="E" EXPOSURE="2" STATE="1" EDITORDER="8 " ATTDECLTYP="2" ATTVALUE="&apos;N&apos;" ATTEXPVIRT="0" TYPTYPE="1" TYPE="CTU_MODE" SRCROW1="0 " SRCCOLUMN1="0 " SRCROW2="0 " SRCCOLUMN2="0 " TYPESRC_LENG="0 "/>
+  <attribute CLSNAME="ZCL_BDC_SESSION" CMPNAME="SCREEN_SHOW" VERSION="1" LANGU="E" EXPOSURE="2" STATE="1" EDITORDER="5 " ATTDECLTYP="2" ATTVALUE="&apos;A&apos;" ATTEXPVIRT="0" TYPTYPE="1" TYPE="CTU_MODE" SRCROW1="0 " SRCCOLUMN1="0 " SRCROW2="0 " SRCCOLUMN2="0 " TYPESRC_LENG="0 "/>
+  <attribute CLSNAME="ZCL_BDC_SESSION" CMPNAME="SCREEN_SHOW_BREAKPOINT" VERSION="1" LANGU="E" EXPOSURE="2" STATE="1" EDITORDER="7 " ATTDECLTYP="2" ATTVALUE="&apos;P&apos;" ATTEXPVIRT="0" TYPTYPE="1" TYPE="CTU_MODE" SRCROW1="0 " SRCCOLUMN1="0 " SRCROW2="0 " SRCCOLUMN2="0 " TYPESRC_LENG="0 "/>
+  <attribute CLSNAME="ZCL_BDC_SESSION" CMPNAME="SCREEN_SHOW_ERR_ONLY" VERSION="1" LANGU="E" EXPOSURE="2" STATE="1" EDITORDER="6 " ATTDECLTYP="2" ATTVALUE="&apos;E&apos;" ATTEXPVIRT="0" TYPTYPE="1" TYPE="CTU_MODE" SRCROW1="0 " SRCCOLUMN1="0 " SRCROW2="0 " SRCCOLUMN2="0 " TYPESRC_LENG="0 "/>
+  <attribute CLSNAME="ZCL_BDC_SESSION" CMPNAME="SIZE_CURRENT" VERSION="1" LANGU="E" EXPOSURE="2" STATE="1" EDITORDER="10 " ATTDECLTYP="2" ATTVALUE="&apos; &apos;" ATTEXPVIRT="0" TYPTYPE="1" TYPE="CTU_DEFSZE" SRCROW1="0 " SRCCOLUMN1="0 " SRCROW2="0 " SRCCOLUMN2="0 " TYPESRC_LENG="0 "/>
+  <attribute CLSNAME="ZCL_BDC_SESSION" CMPNAME="SIZE_STANDARD" VERSION="1" LANGU="E" EXPOSURE="2" STATE="1" EDITORDER="9 " ATTDECLTYP="2" ATTVALUE="&apos;X&apos;" ATTEXPVIRT="0" TYPTYPE="1" TYPE="CTU_DEFSZE" SRCROW1="0 " SRCCOLUMN1="0 " SRCROW2="0 " SRCCOLUMN2="0 " TYPESRC_LENG="0 "/>
+  <attribute CLSNAME="ZCL_BDC_SESSION" CMPNAME="TCODE" VERSION="1" LANGU="E" DESCRIPT="Transaction Code" EXPOSURE="0" STATE="1" EDITORDER="1 " ATTDECLTYP="0" ATTEXPVIRT="0" TYPTYPE="1" TYPE="TCODE" SRCROW1="0 " SRCCOLUMN1="0 " SRCROW2="0 " SRCCOLUMN2="0 " TYPESRC_LENG="0 "/>
+  <method CLSNAME="ZCL_BDC_SESSION" CMPNAME="DESELECT" VERSION="1" LANGU="E" DESCRIPT="Deselect Radiobutton or Checkbox" EXPOSURE="2" STATE="1" EDITORDER="8 " DISPID="0 " MTDTYPE="0" MTDDECLTYP="0" BCMTDCAT="00" BCMTDSYN="0">
+   <parameter CLSNAME="ZCL_BDC_SESSION" CMPNAME="DESELECT" SCONAME="FIELD" VERSION="1" LANGU="E" DESCRIPT="Field name" CMPTYPE="1" MTDTYPE="0" EDITORDER="1 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="CSEQUENCE"/>
+   <source>method DESELECT.
+  fill( field )-&gt;with( space ).
+endmethod.</source>
+  </method>
+  <method CLSNAME="ZCL_BDC_SESSION" CMPNAME="FILL" VERSION="1" LANGU="E" DESCRIPT="Fill Screen Field. Chain with -&gt;WITH( value )." EXPOSURE="2" STATE="1" EDITORDER="3 " DISPID="0 " MTDTYPE="0" MTDDECLTYP="0" BCMTDCAT="00" BCMTDSYN="0">
+   <parameter CLSNAME="ZCL_BDC_SESSION" CMPNAME="FILL" SCONAME="FIELD" VERSION="1" LANGU="E" DESCRIPT="Field name" CMPTYPE="1" MTDTYPE="0" EDITORDER="1 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="CSEQUENCE"/>
+   <parameter CLSNAME="ZCL_BDC_SESSION" CMPNAME="FILL" SCONAME="FIELD_OBJ" VERSION="1" LANGU="E" DESCRIPT="Field Operation" CMPTYPE="1" MTDTYPE="0" EDITORDER="2 " DISPID="0 " PARDECLTYP="3" PARPASSTYP="0" TYPTYPE="3" TYPE="ZCL_BDC_FIELD"/>
+   <source>method FILL.
+  CREATE OBJECT field_obj EXPORTING field = field.
+  APPEND field_obj TO me-&gt;OPERATIONS.
+endmethod.</source>
+  </method>
+  <method CLSNAME="ZCL_BDC_SESSION" CMPNAME="FOCUS_ON" VERSION="1" LANGU="E" DESCRIPT="Set cursor on screen field" EXPOSURE="2" STATE="1" EDITORDER="5 " DISPID="0 " MTDTYPE="0" MTDDECLTYP="0" BCMTDCAT="00" BCMTDSYN="0">
+   <parameter CLSNAME="ZCL_BDC_SESSION" CMPNAME="FOCUS_ON" SCONAME="FIELD" VERSION="1" LANGU="E" DESCRIPT="Field name" CMPTYPE="1" MTDTYPE="0" EDITORDER="1 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="CSEQUENCE"/>
+   <source>method FOCUS_ON.
+  fill( &apos;BDC_CURSOR&apos; )-&gt;with( field ).
+endmethod.</source>
+  </method>
+  <method CLSNAME="ZCL_BDC_SESSION" CMPNAME="GO_TO_SCREEN" VERSION="1" LANGU="E" DESCRIPT="Go to Dynpro Screen. Chain with -&gt;IN_PROG( progname )." EXPOSURE="2" STATE="1" EDITORDER="4 " DISPID="0 " MTDTYPE="0" MTDDECLTYP="0" BCMTDCAT="00" BCMTDSYN="0">
+   <parameter CLSNAME="ZCL_BDC_SESSION" CMPNAME="GO_TO_SCREEN" SCONAME="SCREEN" VERSION="1" LANGU="E" DESCRIPT="BDC Screen number" CMPTYPE="1" MTDTYPE="0" EDITORDER="1 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="N"/>
+   <parameter CLSNAME="ZCL_BDC_SESSION" CMPNAME="GO_TO_SCREEN" SCONAME="SCREEN_OBJ" VERSION="1" LANGU="E" DESCRIPT="Screen (Dynpro) Operation" CMPTYPE="1" MTDTYPE="0" EDITORDER="2 " DISPID="0 " PARDECLTYP="3" PARPASSTYP="0" TYPTYPE="3" TYPE="ZCL_BDC_SCREEN"/>
+   <source>method GO_TO_SCREEN.
+  CREATE OBJECT screen_obj EXPORTING screen = screen.
+  APPEND screen_obj TO me-&gt;operations.
+endmethod.</source>
+  </method>
+  <method CLSNAME="ZCL_BDC_SESSION" CMPNAME="NEW_TRANSACTION" VERSION="1" LANGU="E" DESCRIPT="Factory Method" EXPOSURE="2" STATE="1" EDITORDER="1 " DISPID="0 " MTDTYPE="0" MTDDECLTYP="1" BCMTDCAT="00" BCMTDSYN="0">
+   <parameter CLSNAME="ZCL_BDC_SESSION" CMPNAME="NEW_TRANSACTION" SCONAME="TCODE" VERSION="1" LANGU="E" DESCRIPT="Transaction Code" CMPTYPE="1" MTDTYPE="0" EDITORDER="1 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="CSEQUENCE"/>
+   <parameter CLSNAME="ZCL_BDC_SESSION" CMPNAME="NEW_TRANSACTION" SCONAME="BDC" VERSION="1" LANGU="E" DESCRIPT="Batch Input Session" CMPTYPE="1" MTDTYPE="0" EDITORDER="2 " DISPID="0 " PARDECLTYP="3" PARPASSTYP="0" TYPTYPE="3" TYPE="ZCL_BDC_SESSION"/>
+   <source>method NEW_TRANSACTION.
+  CREATE OBJECT bdc.
+  bdc-&gt;tcode = tcode.
+  bdc-&gt;options-updmode = &apos;S&apos;. &quot;Synchronous update (mandatory for BDC)
+endmethod.</source>
+  </method>
+  <method CLSNAME="ZCL_BDC_SESSION" CMPNAME="RUN" VERSION="1" LANGU="E" DESCRIPT="Execute Batch Input Session" EXPOSURE="2" STATE="1" EDITORDER="2 " DISPID="0 " MTDTYPE="0" MTDDECLTYP="0" BCMTDCAT="00" BCMTDSYN="0">
+   <parameter CLSNAME="ZCL_BDC_SESSION" CMPNAME="RUN" SCONAME="SCREEN" VERSION="1" LANGU="E" DESCRIPT="Screen Display Mode" CMPTYPE="1" MTDTYPE="0" EDITORDER="1 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="CTU_MODE" PARVALUE="SCREEN_SHOW"/>
+   <parameter CLSNAME="ZCL_BDC_SESSION" CMPNAME="RUN" SCONAME="SCREEN_SIZE" VERSION="1" LANGU="E" DESCRIPT="Screen Size" CMPTYPE="1" MTDTYPE="0" EDITORDER="2 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="CTU_DEFSZE" PARVALUE="SIZE_STANDARD"/>
+   <parameter CLSNAME="ZCL_BDC_SESSION" CMPNAME="RUN" SCONAME="IS_BATCH_INPUT" VERSION="1" LANGU="E" DESCRIPT="SY-BINPT = &apos;X&apos; during transaction?" CMPTYPE="1" MTDTYPE="0" EDITORDER="3 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="ABAP_BOOL" PARVALUE="ABAP_TRUE"/>
+   <parameter CLSNAME="ZCL_BDC_SESSION" CMPNAME="RUN" SCONAME="IS_BATCH_INPUT_AT_END" VERSION="1" LANGU="E" DESCRIPT="SY-BINPT = &apos;X&apos; after BDC call?" CMPTYPE="1" MTDTYPE="0" EDITORDER="4 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="ABAP_BOOL" PARVALUE="ABAP_TRUE"/>
+   <parameter CLSNAME="ZCL_BDC_SESSION" CMPNAME="RUN" SCONAME="TERMINATE_AT_COMMIT" VERSION="1" LANGU="E" DESCRIPT="Stop BDC Processing at COMMIT WORK" CMPTYPE="1" MTDTYPE="0" EDITORDER="5 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="ABAP_BOOL" PARVALUE="ABAP_TRUE"/>
+   <source>METHOD run.
+
+  DATA: options TYPE ctu_params.
+  options-dismode = screen.
+  options-updmode = &apos;S&apos;. &quot;Synchronous Update
+  options-defsize = screen_size.
+  options-racommit = boolc( terminate_at_commit = abap_false ).
+  options-nobinpt = boolc( is_batch_input = abap_false ).
+  options-nobiend = boolc( is_batch_input_at_end = abap_false ).
+
+  DATA: bdc_tab TYPE TABLE OF bdcdata,
+        bdc_op TYPE REF TO zif_bdc_operation.
+
+  LOOP AT me-&gt;operations INTO bdc_op.
+    APPEND bdc_op-&gt;bdc_line TO bdc_tab.
+  ENDLOOP.
+
+  CALL TRANSACTION me-&gt;tcode USING bdc_tab
+        OPTIONS FROM options
+        MESSAGES INTO me-&gt;messages.
+
+  IF sy-subrc = 1001.
+    &quot;Processing Error.
+    IF sy-msgty = &apos;S&apos; AND sy-msgid = &apos;00&apos; AND sy-msgno = &apos;344&apos; AND
+       sy-msgv1 = &apos;SAPMSSY3&apos; AND sy-msgv2 = &apos;0131&apos;.
+      &quot;Breakpoint reached and &apos;hide screens&apos; specified.
+    ENDIF.
+  ENDIF.
+ENDMETHOD.</source>
+  </method>
+  <method CLSNAME="ZCL_BDC_SESSION" CMPNAME="SELECT" VERSION="1" LANGU="E" DESCRIPT="Select Radiobutton or Checkbox" EXPOSURE="2" STATE="1" EDITORDER="7 " DISPID="0 " MTDTYPE="0" MTDDECLTYP="0" BCMTDCAT="00" BCMTDSYN="0">
+   <parameter CLSNAME="ZCL_BDC_SESSION" CMPNAME="SELECT" SCONAME="FIELD" VERSION="1" LANGU="E" DESCRIPT="Field name" CMPTYPE="1" MTDTYPE="0" EDITORDER="1 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="CSEQUENCE"/>
+   <source>method SELECT.
+  fill( field )-&gt;with( &apos;X&apos; ).
+endmethod.</source>
+  </method>
+  <method CLSNAME="ZCL_BDC_SESSION" CMPNAME="SET_OKCODE" VERSION="1" LANGU="E" DESCRIPT="Set dynpro screen OK-CODE" EXPOSURE="2" STATE="1" EDITORDER="6 " DISPID="0 " MTDTYPE="0" MTDDECLTYP="0" BCMTDCAT="00" BCMTDSYN="0">
+   <parameter CLSNAME="ZCL_BDC_SESSION" CMPNAME="SET_OKCODE" SCONAME="OKCODE" VERSION="1" LANGU="E" DESCRIPT="BDC field value" CMPTYPE="1" MTDTYPE="0" EDITORDER="1 " DISPID="0 " PARDECLTYP="0" PARPASSTYP="1" TYPTYPE="1" TYPE="CSEQUENCE"/>
+   <source>method SET_OKCODE.
+  fill( &apos;BDC_OKCODE&apos; )-&gt;with( okcode ).
+endmethod.</source>
+  </method>
+ </CLAS>
+ <INTF CLSNAME="ZIF_BDC_OPERATION" VERSION="1" LANGU="E" DESCRIPT="Operation in BDC Program" CATEGORY="00" EXPOSURE="2" STATE="1" RELEASE="0" UNICODE="X">
+  <attribute CLSNAME="ZIF_BDC_OPERATION" CMPNAME="BDC_LINE" VERSION="1" LANGU="E" DESCRIPT="Batch input: New table field structure" EXPOSURE="2" STATE="1" EDITORDER="1 " ATTDECLTYP="0" ATTRDONLY="X" ATTEXPVIRT="0" TYPTYPE="1" TYPE="BDCDATA" SRCROW1="0 " SRCCOLUMN1="0 " SRCROW2="0 " SRCCOLUMN2="0 " TYPESRC_LENG="0 "/>
+ </INTF>
+ <PROG NAME="Z_BDC_EXAMPLE" VARCL="X" SUBC="1" APPL="S" RSTAT="K" RMAND="150" RLOAD="E" FIXPT="X" UCCHECK="X">
+  <textPool>
+   <language SPRAS="E">
+    <textElement ID="R" ENTRY="Example usage of ZCL_BDC_SESSION" LENGTH="32 "/>
+   </language>
+  </textPool>
+  <source>*&amp;---------------------------------------------------------------------*
+*&amp; Report  Z_BDC_EXAMPLE
+*&amp;
+*&amp;---------------------------------------------------------------------*
+*&amp; This example shows how to call a transaction using ZCL_BDC_SESSION.
+*&amp;
+*&amp;---------------------------------------------------------------------*
+
+REPORT Z_BDC_EXAMPLE.
+
+CLASS demo DEFINITION.
+  PUBLIC SECTION.
+    CLASS-METHODS main.
+ENDCLASS.
+
+CLASS demo IMPLEMENTATION.
+  METHOD main.
+    DATA: bdc TYPE REF TO zcl_bdc_session,
+          class_name TYPE c LENGTH 30 VALUE &apos;CL_SPFLI_PERSISTENT&apos;.
+
+    bdc = zcl_bdc_session=&gt;new_transaction( &apos;SE24&apos; ).
+    bdc-&gt;go_to_screen( &apos;1000&apos; )-&gt;in_program( &apos;SAPLSEOD&apos; ).
+    bdc-&gt;focus_on( &apos;SEOCLASS-CLSNAME&apos; ).
+    bdc-&gt;fill( &apos;SEOCLASS-CLSNAME&apos; )-&gt;with( class_name ).
+    bdc-&gt;set_okcode( &apos;=WB_DISPLAY&apos; ).
+
+    bdc-&gt;run( screen      = zcl_bdc_session=&gt;screen_show_err_only
+              screen_size = zcl_bdc_session=&gt;size_current ).
+
+  ENDMETHOD.
+ENDCLASS.
+
+START-OF-SELECTION.
+  demo=&gt;main( ).</source>
+ </PROG>
+ <TTYP TYPENAME="Z_BDC_MESSAGES" DDLANGUAGE="E" ROWTYPE="BDCMSGCOLL" ROWKIND="S" DATATYPE="STRU" LENG="000000" DECIMALS="000000" ACCESSMODE="T" KEYDEF="D" KEYKIND="N" KEYFDCOUNT="0000" DDTEXT="Messages returned from a BDC session" TYPELEN="001250" CTLENG="000000" CTDECIMALS="000000" OCCURS="00000"/>
+ <TTYP TYPENAME="Z_BDC_OPERATIONS" DDLANGUAGE="E" ROWTYPE="ZIF_BDC_OPERATION" ROWKIND="R" DATATYPE="REF" LENG="000000" DECIMALS="000000" ACCESSMODE="T" KEYDEF="D" KEYKIND="N" KEYFDCOUNT="0000" DDTEXT="Array of Batch Input Operations" TYPELEN="000008" CTLENG="000000" CTDECIMALS="000000" REFTYPE="I" OCCURS="00000"/>
+</nugget>
