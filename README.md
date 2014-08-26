@@ -5,11 +5,11 @@ Simple Batch Programming in ABAP
 
 When developing in an SAP system, sometimes it is helpful or necessary to call a transaction with a batch input table, simulating a user session directly via ABAP.  In the past, this was a verbose, unintuitive process, culminating with `CALL TRANSACTION 'MM03' USING bdc_table`. Want to focus on a screen element? Four lines of code will append that action to your internal table, thank you very much.
 
-Zeegor is a lightweight wrapper to make this process much easier.  Zeegor is your assistant, plugging away at the UI the way you tell him, similar to Dr. Frankenstein's Igor, except with a 'Z' in front of his name because that is in the customer namespace.
+Zeegor is a lightweight wrapper to make this process much easier.  Zeegor is your assistant, plugging away at the UI the way you tell him, similar to Dr. Frankenstein's Igor, except with a 'Z' in front of his name because that is in the SAP customer namespace.
 
 Installation
 ------------
-The file zeegor.nugg can be imported to your SAP system via SAPLink.
+The file zeegor.nugg can be imported to your SAP system via [SAPLink](https://code.google.com/p/saplink/).
 
 Syntax
 ------
@@ -43,3 +43,14 @@ Here is an example of calling the class builder to display a class.
                 screen_size = zcl_bdc_session=>size_current ).
                   
 This same example is in the ABAP documentation as program `DEMO_CALL_TRANSACTION_BDC`, except it is 48 lines long.
+
+Tables and Whatnot
+------------------
+To focus on or modify a table control, use the method `row( )` like so:
+
+    bdc->fill( 'ITAB-FIELD' )->row( index )->with( my_value ).
+    bdc->focus_on( 'ITAB-FIELD' )->row( index + 1 ).
+    
+Contributing
+------------
+There are no hard and fast rules for contributing.  If you have a change that is within the scope of BDC, go for it.
