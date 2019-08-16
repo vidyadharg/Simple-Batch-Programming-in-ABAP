@@ -1,3 +1,17 @@
+==========================================================================
+
+change log...
+
+1. Solution handles call transaction and Batch session(SM35).
+
+2. Program ZBDCREC - generates code for SHDB recordings.
+
+3. Demo program Z_BDC_EXAMPLE
+
+4.Installation : Install this project via ABAPGit. 
+
+==========================================================================
+
 Zeegor
 ======
 
