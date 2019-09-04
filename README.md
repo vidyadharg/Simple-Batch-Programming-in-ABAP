@@ -4,7 +4,7 @@ change log...
 
 1. Solution handles call transaction and Batch session(SM35).
 2. Demo program Z_BDC_EXAMPLE
-3. Installation : Install this project via ABAPGit. ( file - ZBATCH_20190816_114239.zip )  
+3. Installation : Install this project via ABAPGit. ( file - ![ZBATCH_20190816_114239.zip](https://github.com/vidyadharg/zeegor/blob/master/ZBATCH_20190816_114239.zip) ) 
 4. Program ZBDCREC - generates code for SHDB recordings.
 
 ![Image1](https://github.com/vidyadharg/zeegor/blob/master/images/image.png)
@@ -22,7 +22,7 @@ Zeegor is a lightweight wrapper to make this process much easier.  Zeegor is you
 
 Installation
 ------------
-The file zeegor.nugg can be imported to your SAP system via [SAPLink](https://code.google.com/p/saplink/).
+ Install this project via ABAPGit. ( file - ![ZBATCH_20190816_114239.zip](https://github.com/vidyadharg/zeegor/blob/master/ZBATCH_20190816_114239.zip)
 
 Syntax
 ------
