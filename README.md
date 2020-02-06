@@ -4,8 +4,10 @@ change log...
 
 1. Solution handles call transaction and Batch session(SM35).
 2. Demo program Z_BDC_EXAMPLE
-3. Installation : Install this project via ABAPGit. ( file - ![ZBATCH_20190816_114239.zip](https://github.com/vidyadharg/zeegor/blob/master/ZBATCH_20190816_114239.zip) ) 
+3. Installation : Install project via ABAPGit folder source
 4. Program ZBDCREC - generates code for SHDB recordings.
+
+
 
 ![Image1](https://github.com/vidyadharg/zeegor/blob/master/images/image.png)
 
@@ -22,7 +24,7 @@ Zeegor is a lightweight wrapper to make this process much easier.  Zeegor is you
 
 Installation
 ------------
- Install this project via ABAPGit. ( file - ![ZBATCH_20190816_114239.zip](https://github.com/vidyadharg/zeegor/blob/master/ZBATCH_20190816_114239.zip)
+ Install this project via ABAPGit.
 
 Syntax
 ------
