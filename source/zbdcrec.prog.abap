@@ -168,10 +168,7 @@ FORM record_select USING    p_groupid
   ENDIF.
 ENDFORM.
 
-
 FORM f_init.
-  DATA :
-    lw_source  TYPE gt_source.
 
   IF doc_container IS INITIAL.
 
@@ -199,8 +196,7 @@ FORM f_init.
         MESSAGE e010(ad) WITH 'Error setting up screen'.
       ENDIF.
 
-      lw_source = 'Source code:'.
-      APPEND lw_source TO gi_source.
+      APPEND 'Source code:' TO gi_source.
 
       go_textedit->set_toolbar_mode( toolbar_mode = 0 ).
       go_textedit->set_statusbar_mode( statusbar_mode = 0 ).
@@ -315,25 +311,18 @@ ENDFORM.                    " get_selections
 FORM generate_code USING
       pc_row    TYPE i.
   DATA :
-    lw_source TYPE gt_source,
-
     lw_outtab TYPE gt_outtab.
 
   DATA:
-    li_dynprotab    TYPE STANDARD TABLE OF bdcdata,
-    li_DYNPRO_FIELDS TYPE STANDARD TABLE OF BDCDF,
-    lw_DYNPRO_FIELDS type BDCDF,
-    lw_dynprotab TYPE bdcdata,
-    lv_DYNPRO_FIELDS_INDEX TYPE i,
-    tcode        LIKE tstc-tcode.
+    li_dynprotab           TYPE STANDARD TABLE OF bdcdata,
+    li_dynpro_fields       TYPE STANDARD TABLE OF bdcdf,
+    lw_dynpro_fields       TYPE bdcdf,
+    lw_dynprotab           TYPE bdcdata,
+    lv_dynpro_fields_index TYPE i,
+    tcode                  LIKE tstc-tcode.
 
   DATA:
     lv_quid TYPE apq_quid.
-
-  DEFINE append_cod.
-    APPEND &1 TO gi_source.
-    CLEAR lw_source.
-  END-OF-DEFINITION.
 
   CLEAR gi_source[].
 
@@ -354,97 +343,94 @@ FORM generate_code USING
     MESSAGE s627(ms) WITH lv_quid. EXIT.
   ENDIF.
 
-
   CALL FUNCTION 'BDC_DYNPROTAB_GET_FIELDS'
-       TABLES
-            DYNPROTAB    = li_dynprotab
-            DYNPROFIELDS = li_DYNPRO_FIELDS.
+    TABLES
+      dynprotab    = li_dynprotab
+      dynprofields = li_dynpro_fields.
 
 
+  gi_source = VALUE #(
 * same lines for all records ------------------------------------------
 * ***report <report>
-  append_cod 'Report zreportname'.
-  append_cod '       no standard page heading line-size 255.'.
-  append_cod ''.
-  append_cod '* Include bdcrecx1_s:'.
-  append_cod '* The call transaction using is called WITH AUTHORITY-CHECK!'.
-  append_cod '* If you have own auth.-checks you can use include bdcrecx1 instead.'.
-
+    ( 'Report zreportname' )
+    ( '       no standard page heading line-size 255.' )
+    ( '' )
+    ( '* Include bdcrecx1_s:' )
+    ( '* The call transaction using is called WITH AUTHORITY-CHECK!' )
+    ( '* If you have own auth.-checks you can use include bdcrecx1 instead.' )
 * ***include bdcrecxx.
 * ***include bdcrecx1.    "since release 4.5
 * ***include bdcrecx1_s.  "since release 7.50 SP 09 and 7.51 SP 04
-  append_cod 'include bdcrecx1_s.'.
+    ( 'include bdcrecx1_s.' ) ).
 
-PERFORM source_file_line TABLES li_DYNPROTAB li_DYNPRO_FIELDS.
-
-append_cod ''.
-append_cod 'SELECTION-SCREEN BEGIN OF BLOCK b1 WITH FRAME TITLE TEXT-T01.'.
-append_cod 'PARAMETERS:'.
-append_cod '  pfile TYPE string OBLIGATORY,'.
-append_cod '  p_thresh  TYPE i DEFAULT 100.  "threshold # trans per session'.
-append_cod 'SELECTION-SCREEN END OF BLOCK b1.'.
-append_cod ''.
-append_cod 'AT SELECTION-SCREEN ON VALUE-REQUEST FOR pfile.'.
-append_cod '*file_open_dialog'.
-append_cod '*cl_gui_frontend_services=>file_open_dialog( ).'.
-append_cod ''.
-
-  append_cod  'INITIALIZATION.'.
-  append_cod ''.
-  append_cod  '*  DATA(app_log) = zcl_log_factory=>create_log( object = ''ZFICO'''.
-  append_cod  '*                                               subobject = '''''.
-  append_cod  '*                                               desc = '''' )'.
-* ***start-of-selection.
-  append_cod 'START-OF-SELECTION.'.
-  append_cod ''.
-  append_cod '*  PERFORM  UPLOAD_FILE.'.
-  append_cod ''.
-  append_cod '  PERFORM  run_bdc.'.
-  append_cod ''.
-  append_cod 'END-OF-SELECTION.'.
-  append_cod ''.
-  append_cod '*  app_log->fullscreen( ).'.
-  append_cod ''.
-  append_cod 'FORM  run_bdc.'.
-  append_cod '  DATA :'.
-  append_cod '    lv_bdc_selscrn TYPE zst_bdc_selscrn,'.
-  append_cod '    lw_file        TYPE gt_file.'.
-  append_cod ''.
-  append_cod '    lv_bdc_selscrn-session = session.   " SM35 session'.
-  append_cod '    lv_bdc_selscrn-group = group.       " session name'.
-  append_cod '    lv_bdc_selscrn-user = user.         " User '.
-  append_cod '    lv_bdc_selscrn-keep = keep.         " Keep session'.
-  append_cod '    lv_bdc_selscrn-holddate = holddate. " Lock date'.
-  append_cod '    lv_bdc_selscrn-e_group = e_group.   " Error sessn'.
-  append_cod '    lv_bdc_selscrn-e_user = e_user.     " Error session User'.
-  append_cod '    lv_bdc_selscrn-e_keep = e_keep.     " Keep Error session'.
-  append_cod '    lv_bdc_selscrn-e_hdate = e_hdate.   " Error session lock date'.
-  append_cod '    lv_bdc_selscrn-nodata = nodata.     " NO DATA '.
-  append_cod '    lv_bdc_selscrn-thresh = p_thresh.   " Threshold transan per session'.
-  append_cod ''.
-  append_cod '    bdc = NEW zcl_bdc_run( i_bdc_selscrn = lv_bdc_selscrn ).'.
-  append_cod ''.
-  append_cod '    LOOP AT gi_file INTO lw_file.'.
-  append_cod '      PERFORM f_bdc USING lw_file.'.
-  append_cod ''.
-  append_cod '      bdc->run_bdc('.
-  append_cod '          EXPORTING'.
-  append_cod '            screen      = ctumode "zcl_bdc_run=>screen_show_err_only'.
-  append_cod '            screen_size = zcl_bdc_run=>size_current'.
-  append_cod '*          terminate_at_commit = ''X'' ).'.
-  append_cod '          IMPORTING et_messages = data(li_messages) ).'.
-  append_cod ''.
-  append_cod '*      app_log->add( li_messages ).'.
-  append_cod ''.
-  append_cod '    ENDLOOP.'.
-  append_cod ''.
-  append_cod '  CLEAR li_messages[].'.
-  append_cod '  bdc->close_bdc( IMPORTING et_messages = li_messages ).'.
-  append_cod '*  app_log->add( li_messages ).'.
-  append_cod ''.
-  append_cod 'ENDFORM.  "run_bdc'.
-  append_cod ''.
-  append_cod 'FORM f_bdc USING pw_file TYPE gt_file.'.
+  PERFORM source_file_line TABLES li_dynprotab li_dynpro_fields.
+  gi_source = VALUE #( BASE gi_source
+    ( '' )
+    ( 'SELECTION-SCREEN BEGIN OF BLOCK b1 WITH FRAME TITLE TEXT-T01.' )
+    ( 'PARAMETERS:' )
+    ( '  pfile TYPE string OBLIGATORY,' )
+    ( '  p_thresh  TYPE i DEFAULT 100.  "threshold # trans per session' )
+    ( 'SELECTION-SCREEN END OF BLOCK b1.' )
+    ( '' )
+    ( 'AT SELECTION-SCREEN ON VALUE-REQUEST FOR pfile.' )
+    ( '*file_open_dialog' )
+    ( '*cl_gui_frontend_services=>file_open_dialog( ).' )
+    ( '' )
+    (  'INITIALIZATION.' )
+    ( '' )
+    (  '*  DATA(log) = zcl_log_factory=>create_log( object = ''ZFICO''' )
+    (  '*                                               subobject = ''''' )
+    (  '*                                               desc = '''' )' )
+    ( 'START-OF-SELECTION.' )
+    ( '' )
+    ( '*  PERFORM  UPLOAD_FILE.' )
+    ( '' )
+    ( '  PERFORM  run_bdc.' )
+    ( '' )
+    ( '*END-OF-SELECTION.' )
+    ( '' )
+    ( '*  log->fullscreen( ).' )
+    ( '' )
+    ( 'FORM  run_bdc.' )
+    ( '  DATA :' )
+    ( '    lv_bdc_selscrn TYPE zst_bdc_selscrn,' )
+    ( '    lw_file        TYPE gt_file.' )
+    ( '' )
+    ( '    lv_bdc_selscrn-session = session.   " SM35 session' )
+    ( '    lv_bdc_selscrn-group = group.       " session name' )
+    ( '    lv_bdc_selscrn-user = user.         " User ' )
+    ( '    lv_bdc_selscrn-keep = keep.         " Keep session' )
+    ( '    lv_bdc_selscrn-holddate = holddate. " Lock date' )
+    ( '    lv_bdc_selscrn-e_group = e_group.   " Error sessn' )
+    ( '    lv_bdc_selscrn-e_user = e_user.     " Error session User' )
+    ( '    lv_bdc_selscrn-e_keep = e_keep.     " Keep Error session' )
+    ( '    lv_bdc_selscrn-e_hdate = e_hdate.   " Error session lock date' )
+    ( '    lv_bdc_selscrn-nodata = nodata.     " NO DATA ' )
+    ( '    lv_bdc_selscrn-thresh = p_thresh.   " Threshold transan per session' )
+    ( '' )
+    ( '    bdc = NEW zcl_bdc_run( i_bdc_selscrn = lv_bdc_selscrn ).' )
+    ( '' )
+    ( '    LOOP AT gi_file INTO lw_file.' )
+    ( '      PERFORM f_bdc USING lw_file.' )
+    ( '' )
+    ( '      bdc->run_bdc(' )
+    ( '          EXPORTING' )
+    ( '            screen      = ctumode "zcl_bdc_run=>screen_show_err_only' )
+    ( '            screen_size = zcl_bdc_run=>size_current' )
+    ( '*          terminate_at_commit = ''X'' ).' )
+    ( '          IMPORTING et_messages = data(li_messages) ).' )
+    ( '' )
+    ( '*      log->add( li_messages ).' )
+    ( '' )
+    ( '    ENDLOOP.' )
+    ( '' )
+    ( '  CLEAR li_messages[].' )
+    ( '  bdc->close_bdc( IMPORTING et_messages = li_messages ).' )
+    ( '*  log->add( li_messages ).' )
+    ( '' )
+    ( 'ENDFORM.  "run_bdc' )
+    ( '' )
+    ( 'FORM f_bdc USING pw_file TYPE gt_file.' ) ).
 
   LOOP AT li_dynprotab INTO lw_dynprotab.
     CASE lw_dynprotab-dynbegin.
@@ -453,22 +439,20 @@ append_cod ''.
 *       save tcode for next transaction
         tcode = lw_dynprotab-fnam.
         IF NOT tcode IS INITIAL.
-          append_cod ''.
+          APPEND '' TO gi_source.
 *         ***perform bdc_transaction using dynprotab-fnam.
-          lw_source = '  bdc->new_transaction(''' && tcode && ''').' .
-          append_cod lw_source.
+          APPEND '  bdc->new_transaction(''' && tcode && ''').'  TO gi_source.
         ENDIF.
 *     new dynpro ------------------------------------------------------
       WHEN 'X'.
 *       ***bdc->go_to_screen( '0100' )->in_program( 'SAPMSSFO' ).
-        append_cod ''.
-        lw_source =
+        APPEND '' TO gi_source.
+        APPEND
         |  bdc->go_to_screen( '| &&
         lw_dynprotab-dynpro &&
         |' )->in_program( '| &&
         lw_dynprotab-program &&
-        |' ).|.
-        append_cod lw_source.
+        |' ).|  TO gi_source.
 *     dynpro field ----------------------------------------------------
       WHEN space.
 *       ***perform bdc_field using <dynprotab-fnam> <dynprotab-fval>.
@@ -477,40 +461,37 @@ append_cod ''.
         CASE lw_dynprotab-fnam.
           WHEN 'BDC_CURSOR'.
 *bdc->focus_on( 'RB_TX' ).
-            lw_source =
+            APPEND
             |  bdc->focus_on( '| &&
             lw_dynprotab-fval &&
-            |' ).|.
-            append_cod lw_source.
+            |' ).|  TO gi_source.
 
           WHEN 'BDC_OKCODE'.
 *bdc->set_okcode( '=RB' ).
-            lw_source =
+            APPEND
             |  bdc->set_okcode( '| &&
             lw_dynprotab-fval &&
-            |' ).|.
-            append_cod lw_source.
+            |' ).| TO gi_source.
 
           WHEN OTHERS.
 
-    ADD 1 TO lv_DYNPRO_FIELDS_INDEX.
-    READ TABLE li_DYNPRO_FIELDS INDEX lv_DYNPRO_FIELDS_INDEX INTO lw_DYNPRO_FIELDS.
+            ADD 1 TO lv_dynpro_fields_index.
+            READ TABLE li_dynpro_fields INDEX lv_dynpro_fields_index INTO lw_dynpro_fields.
 
 *bdc->fill( 'SSFSCREEN-TNAME' )->with( stnam-low ).
-            lw_source =
+            APPEND
             |  bdc->fill( '| &&
             lw_dynprotab-fnam &&
             |' )->with( pw_file-| &&
-            lw_DYNPRO_FIELDS-RECFIELD &&
+            lw_dynpro_fields-recfield &&
             | ). "| &&
-            lw_dynprotab-fval.
-            append_cod lw_source.
+            lw_dynprotab-fval TO gi_source.
         ENDCASE.
     ENDCASE.
   ENDLOOP.
 
-  append_cod ''.
-  append_cod 'ENDFORM.  "f_bdc'.
+  APPEND '' TO gi_source.
+  APPEND 'ENDFORM.  "f_bdc' TO gi_source..
 
   go_textedit->set_text_as_r3table( table = gi_source ).
 
@@ -518,77 +499,74 @@ ENDFORM.
 
 
 FORM source_file_line
-  TABLES DYNPROTAB DYNPRO_FIELDS.
+  TABLES dynprotab dynpro_fields.
 
 
-DATA:
-  lw_DYNPRO_FIELDS TYPE BDCDF,
-  lw_source type gt_source,
+  DATA:
+    lw_dynpro_fields TYPE bdcdf,
+    lw_source        TYPE gt_source,
 
-  L_DFIES     LIKE DFIES,
-  L_TABNAME   LIKE DCOBJDEF-NAME,
-  L_FIELDNAME LIKE DFIES-LFIELDNAME,
-  L_DUMMY     LIKE DFIES-LFIELDNAME.
+    l_dfies          LIKE dfies,
+    l_tabname        LIKE dcobjdef-name,
+    l_fieldname      LIKE dfies-lfieldname,
+    l_dummy          LIKE dfies-lfieldname.
 
-  append_cod ''.
-  append_cod 'TYPES:'.
-  append_cod '  BEGIN OF gt_file,'.
+  gi_source = VALUE #( BASE gi_source
+    ( '' )
+    ( 'TYPES:' )
+    ( '  BEGIN OF gt_file,' ) ).
 
 
-  LOOP AT DYNPRO_FIELDS INTO lw_DYNPRO_FIELDS.
+  LOOP AT dynpro_fields INTO lw_dynpro_fields.
 *   *** <field_n>(<length>)
-    CLEAR L_DFIES.
-    IF lw_DYNPRO_FIELDS-FIELDNAME CA '-'.
+    CLEAR l_dfies.
+    IF lw_dynpro_fields-fieldname CA '-'.
 *     create dataelement comment line
-      SPLIT lw_DYNPRO_FIELDS-FIELDNAME AT '-'
-            INTO L_TABNAME
-                 L_FIELDNAME.
-      SPLIT L_FIELDNAME AT '('
-            INTO L_FIELDNAME
-                 L_DUMMY.
+      SPLIT lw_dynpro_fields-fieldname AT '-'
+            INTO l_tabname
+                 l_fieldname.
+      SPLIT l_fieldname AT '('
+            INTO l_fieldname
+                 l_dummy.
       CALL FUNCTION 'DDIF_FIELDINFO_GET'
-           EXPORTING
-                TABNAME        = L_TABNAME
-*               fieldname      = l_fieldname
-*               LANGU          = SY-LANGU
-                LFIELDNAME     = L_FIELDNAME
-*               ALL_TYPES      = ' '
-           IMPORTING
-*               X030L_WA       =
-*               DDOBJTYPE      =
-                DFIES_WA       = L_DFIES
+        EXPORTING
+          tabname        = l_tabname
+*         fieldname      = l_fieldname
+*         LANGU          = SY-LANGU
+          lfieldname     = l_fieldname
+*         ALL_TYPES      = ' '
+        IMPORTING
+*         X030L_WA       =
+*         DDOBJTYPE      =
+          dfies_wa       = l_dfies
 *          TABLES
-*               DFIES_TAB      =
-           EXCEPTIONS
-                NOT_FOUND      = 1
-                INTERNAL_ERROR = 2
-                OTHERS         = 3.
-      IF SY-SUBRC <> 0.
-        CLEAR L_DFIES.
+*         DFIES_TAB      =
+        EXCEPTIONS
+          not_found      = 1
+          internal_error = 2
+          OTHERS         = 3.
+      IF sy-subrc <> 0.
+        CLEAR l_dfies.
       ENDIF.
     ENDIF.
 
-*    CONCATENATE '    ' lw_DYNPRO_FIELDS-RECFIELD
-*                '(' lw_DYNPRO_FIELDS-LENGTH ')' ', "'
-*                L_DFIES-SCRTEXT_L
-*                ' * data element: ' L_DFIES-ROLLNAME
-*                INTO lw_source.
+    lw_source = |    | && lw_dynpro_fields-recfield &&
+    |(| && lw_dynpro_fields-length && |), "|
+     && l_dfies-scrtext_l &&
+     | " data element: |  && l_dfies-rollname.
 
-    lw_source = |    | && lw_DYNPRO_FIELDS-RECFIELD &&
-    |(| && lw_DYNPRO_FIELDS-LENGTH && |), "|
-     && L_DFIES-SCRTEXT_L &&
-     | " data element: |  && L_DFIES-ROLLNAME.
+    gi_source = VALUE #( BASE gi_source
+                  ( lw_source ) ).
 
-    APPEND_cod lw_source.
   ENDLOOP.
 
 * *** end   of record.
-
-  append_cod '  END OF gt_file,'.
-  append_cod '  gtt_file TYPE STANDARD TABLE OF gt_file.'.
-  append_cod ''.
-  append_cod 'DATA :'.
-  append_cod '  bdc     TYPE REF TO zcl_bdc_run,'.
-  append_cod '  gi_file TYPE gtt_file.'.
-  append_cod ''.
-endform.
+  gi_source = VALUE #( BASE gi_source
+    ( '  END OF gt_file,' )
+    ( '  gtt_file TYPE STANDARD TABLE OF gt_file.' )
+    ( '' )
+    ( 'DATA :' )
+    ( '  bdc     TYPE REF TO zcl_bdc_run,' )
+    ( '  gi_file TYPE gtt_file.' )
+    ( '' ) ).
+ENDFORM.
