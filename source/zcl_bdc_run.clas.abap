@@ -70,7 +70,7 @@ private section.
 
   methods GET_SESSION_NAME
     importing
-      !I_ADD_CNT type XFLD default ''
+      !I_ADD_CNT type XFELD default ''
     returning
       value(RV_GROUP) type APQI-GROUPID .
   methods RUN_SESSION
@@ -100,14 +100,14 @@ CLASS ZCL_BDC_RUN IMPLEMENTATION.
 
   METHOD add_msg.
     DATA :
-      li_messages TYPE ZTT_BDC_MESSAGES,
+      li_messages     TYPE ztt_bdc_messages,
       lw_bdc_messages TYPE bdcmsgcoll.
 
     IF it_messages IS SUPPLIED.
-*      APPEND LINES OF it_messages TO messages.
-       bdc_transaction->SET_MESSAGES( it_messages ).
+*       APPEND LINES OF it_messages TO messages.
+      bdc_transaction->set_messages( it_messages ).
     ELSE.
-      IF sy-msgid IS NOT INITIAL AND sy-msgno IS  NOT INITIAL.
+      IF sy-msgid IS NOT INITIAL AND sy-msgty IS  NOT INITIAL.
 
         lw_bdc_messages-msgtyp = sy-msgty.
 *lw_bdc_messages-MSGSPRA =
@@ -118,8 +118,8 @@ CLASS ZCL_BDC_RUN IMPLEMENTATION.
         lw_bdc_messages-msgv3 = sy-msgv3.
         lw_bdc_messages-msgv4 = sy-msgv4.
         APPEND lw_bdc_messages TO li_messages.
-        bdc_transaction->SET_MESSAGES( li_messages ).
-        APPEND LINES OF li_messages to messages.
+        bdc_transaction->set_messages( li_messages ).
+        APPEND LINES OF li_messages TO messages.
       ENDIF.
     ENDIF.
   ENDMETHOD.

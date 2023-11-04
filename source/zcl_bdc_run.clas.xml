@@ -13,21 +13,108 @@
    </VSEOCLASS>
    <DESCRIPTIONS>
     <SEOCOMPOTX>
-     <CLSNAME>ZCL_BDC_RUN</CLSNAME>
+     <CMPNAME>BDC_SELSCRN</CMPNAME>
+     <LANGU>7</LANGU>
+     <DESCRIPT>BDC selection screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
      <CMPNAME>BDC_SELSCRN</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>BDC selection screen</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
-     <CLSNAME>ZCL_BDC_RUN</CLSNAME>
+     <CMPNAME>BDC_SELSCRN</CMPNAME>
+     <LANGU>W</LANGU>
+     <DESCRIPT>BDC selection screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>BDC_SELSCRN</CMPNAME>
+     <LANGU>Z</LANGU>
+     <DESCRIPT>BDC selection screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>BDC_SELSCRN</CMPNAME>
+     <LANGU>a</LANGU>
+     <DESCRIPT>BDC selection screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>BDC_SELSCRN</CMPNAME>
+     <LANGU>묩</LANGU>
+     <DESCRIPT>BDC selection screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>BDC_SELSCRN</CMPNAME>
+     <LANGU>뱋</LANGU>
+     <DESCRIPT>BDC selection screen</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SESSION_NAME</CMPNAME>
+     <LANGU>7</LANGU>
+     <DESCRIPT>return session name with counter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
      <CMPNAME>GET_SESSION_NAME</CMPNAME>
      <LANGU>E</LANGU>
      <DESCRIPT>return session name with counter</DESCRIPT>
     </SEOCOMPOTX>
     <SEOCOMPOTX>
-     <CLSNAME>ZCL_BDC_RUN</CLSNAME>
+     <CMPNAME>GET_SESSION_NAME</CMPNAME>
+     <LANGU>W</LANGU>
+     <DESCRIPT>return session name with counter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SESSION_NAME</CMPNAME>
+     <LANGU>Z</LANGU>
+     <DESCRIPT>return session name with counter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SESSION_NAME</CMPNAME>
+     <LANGU>a</LANGU>
+     <DESCRIPT>return session name with counter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SESSION_NAME</CMPNAME>
+     <LANGU>묩</LANGU>
+     <DESCRIPT>return session name with counter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SESSION_NAME</CMPNAME>
+     <LANGU>뱋</LANGU>
+     <DESCRIPT>return session name with counter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MESSAGES</CMPNAME>
+     <LANGU>7</LANGU>
+     <DESCRIPT>Messages returned from a BDC session</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
      <CMPNAME>MESSAGES</CMPNAME>
      <LANGU>E</LANGU>
+     <DESCRIPT>Messages returned from a BDC session</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MESSAGES</CMPNAME>
+     <LANGU>W</LANGU>
+     <DESCRIPT>Messages returned from a BDC session</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MESSAGES</CMPNAME>
+     <LANGU>Z</LANGU>
+     <DESCRIPT>Messages returned from a BDC session</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MESSAGES</CMPNAME>
+     <LANGU>a</LANGU>
+     <DESCRIPT>Messages returned from a BDC session</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MESSAGES</CMPNAME>
+     <LANGU>묩</LANGU>
+     <DESCRIPT>Messages returned from a BDC session</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MESSAGES</CMPNAME>
+     <LANGU>뱋</LANGU>
      <DESCRIPT>Messages returned from a BDC session</DESCRIPT>
     </SEOCOMPOTX>
    </DESCRIPTIONS>

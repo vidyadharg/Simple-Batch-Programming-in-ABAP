@@ -44,6 +44,222 @@
      <TEXT>Processing of batch group &amp;1 triggered</TEXT>
     </T100>
    </T100>
+   <I18N_LANGS>
+    <LANGU>7</LANGU>
+    <LANGU>W</LANGU>
+    <LANGU>Z</LANGU>
+    <LANGU>a</LANGU>
+    <LANGU>묩</LANGU>
+    <LANGU>뱋</LANGU>
+   </I18N_LANGS>
+   <T100T>
+    <T100T>
+     <SPRSL>7</SPRSL>
+     <ARBGB>ZBDC</ARBGB>
+    </T100T>
+    <T100T>
+     <SPRSL>W</SPRSL>
+     <ARBGB>ZBDC</ARBGB>
+    </T100T>
+    <T100T>
+     <SPRSL>Z</SPRSL>
+     <ARBGB>ZBDC</ARBGB>
+    </T100T>
+    <T100T>
+     <SPRSL>a</SPRSL>
+     <ARBGB>ZBDC</ARBGB>
+    </T100T>
+    <T100T>
+     <SPRSL>묩</SPRSL>
+     <ARBGB>ZBDC</ARBGB>
+    </T100T>
+    <T100T>
+     <SPRSL>뱋</SPRSL>
+     <ARBGB>ZBDC</ARBGB>
+    </T100T>
+   </T100T>
+   <T100_TEXTS>
+    <item>
+     <SPRSL>7</SPRSL>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4</TEXT>
+    </item>
+    <item>
+     <SPRSL>7</SPRSL>
+     <MSGNR>001</MSGNR>
+     <TEXT>Create group &amp;1</TEXT>
+    </item>
+    <item>
+     <SPRSL>7</SPRSL>
+     <MSGNR>002</MSGNR>
+     <TEXT>BDC_OPEN_GROUP returncode: &amp;1</TEXT>
+    </item>
+    <item>
+     <SPRSL>7</SPRSL>
+     <MSGNR>003</MSGNR>
+     <TEXT>BDC_INSERT returncode: &amp;1 RECORD: &amp;2</TEXT>
+    </item>
+    <item>
+     <SPRSL>7</SPRSL>
+     <MSGNR>004</MSGNR>
+     <TEXT>BDC_CLOSE_GROUP group &amp;1 returncode: &amp;2</TEXT>
+    </item>
+    <item>
+     <SPRSL>7</SPRSL>
+     <MSGNR>005</MSGNR>
+     <TEXT>Processing of batch group &amp;1 triggered</TEXT>
+    </item>
+    <item>
+     <SPRSL>W</SPRSL>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4</TEXT>
+    </item>
+    <item>
+     <SPRSL>W</SPRSL>
+     <MSGNR>001</MSGNR>
+     <TEXT>Create group &amp;1</TEXT>
+    </item>
+    <item>
+     <SPRSL>W</SPRSL>
+     <MSGNR>002</MSGNR>
+     <TEXT>BDC_OPEN_GROUP returncode: &amp;1</TEXT>
+    </item>
+    <item>
+     <SPRSL>W</SPRSL>
+     <MSGNR>003</MSGNR>
+     <TEXT>BDC_INSERT returncode: &amp;1 RECORD: &amp;2</TEXT>
+    </item>
+    <item>
+     <SPRSL>W</SPRSL>
+     <MSGNR>004</MSGNR>
+     <TEXT>BDC_CLOSE_GROUP group &amp;1 returncode: &amp;2</TEXT>
+    </item>
+    <item>
+     <SPRSL>W</SPRSL>
+     <MSGNR>005</MSGNR>
+     <TEXT>Processing of batch group &amp;1 triggered</TEXT>
+    </item>
+    <item>
+     <SPRSL>Z</SPRSL>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4</TEXT>
+    </item>
+    <item>
+     <SPRSL>Z</SPRSL>
+     <MSGNR>001</MSGNR>
+     <TEXT>Create group &amp;1</TEXT>
+    </item>
+    <item>
+     <SPRSL>Z</SPRSL>
+     <MSGNR>002</MSGNR>
+     <TEXT>BDC_OPEN_GROUP returncode: &amp;1</TEXT>
+    </item>
+    <item>
+     <SPRSL>Z</SPRSL>
+     <MSGNR>003</MSGNR>
+     <TEXT>BDC_INSERT returncode: &amp;1 RECORD: &amp;2</TEXT>
+    </item>
+    <item>
+     <SPRSL>Z</SPRSL>
+     <MSGNR>004</MSGNR>
+     <TEXT>BDC_CLOSE_GROUP group &amp;1 returncode: &amp;2</TEXT>
+    </item>
+    <item>
+     <SPRSL>Z</SPRSL>
+     <MSGNR>005</MSGNR>
+     <TEXT>Processing of batch group &amp;1 triggered</TEXT>
+    </item>
+    <item>
+     <SPRSL>a</SPRSL>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4</TEXT>
+    </item>
+    <item>
+     <SPRSL>a</SPRSL>
+     <MSGNR>001</MSGNR>
+     <TEXT>Create group &amp;1</TEXT>
+    </item>
+    <item>
+     <SPRSL>a</SPRSL>
+     <MSGNR>002</MSGNR>
+     <TEXT>BDC_OPEN_GROUP returncode: &amp;1</TEXT>
+    </item>
+    <item>
+     <SPRSL>a</SPRSL>
+     <MSGNR>003</MSGNR>
+     <TEXT>BDC_INSERT returncode: &amp;1 RECORD: &amp;2</TEXT>
+    </item>
+    <item>
+     <SPRSL>a</SPRSL>
+     <MSGNR>004</MSGNR>
+     <TEXT>BDC_CLOSE_GROUP group &amp;1 returncode: &amp;2</TEXT>
+    </item>
+    <item>
+     <SPRSL>a</SPRSL>
+     <MSGNR>005</MSGNR>
+     <TEXT>Processing of batch group &amp;1 triggered</TEXT>
+    </item>
+    <item>
+     <SPRSL>묩</SPRSL>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4</TEXT>
+    </item>
+    <item>
+     <SPRSL>묩</SPRSL>
+     <MSGNR>001</MSGNR>
+     <TEXT>Create group &amp;1</TEXT>
+    </item>
+    <item>
+     <SPRSL>묩</SPRSL>
+     <MSGNR>002</MSGNR>
+     <TEXT>BDC_OPEN_GROUP returncode: &amp;1</TEXT>
+    </item>
+    <item>
+     <SPRSL>묩</SPRSL>
+     <MSGNR>003</MSGNR>
+     <TEXT>BDC_INSERT returncode: &amp;1 RECORD: &amp;2</TEXT>
+    </item>
+    <item>
+     <SPRSL>묩</SPRSL>
+     <MSGNR>004</MSGNR>
+     <TEXT>BDC_CLOSE_GROUP group &amp;1 returncode: &amp;2</TEXT>
+    </item>
+    <item>
+     <SPRSL>묩</SPRSL>
+     <MSGNR>005</MSGNR>
+     <TEXT>Processing of batch group &amp;1 triggered</TEXT>
+    </item>
+    <item>
+     <SPRSL>뱋</SPRSL>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4</TEXT>
+    </item>
+    <item>
+     <SPRSL>뱋</SPRSL>
+     <MSGNR>001</MSGNR>
+     <TEXT>Create group &amp;1</TEXT>
+    </item>
+    <item>
+     <SPRSL>뱋</SPRSL>
+     <MSGNR>002</MSGNR>
+     <TEXT>BDC_OPEN_GROUP returncode: &amp;1</TEXT>
+    </item>
+    <item>
+     <SPRSL>뱋</SPRSL>
+     <MSGNR>003</MSGNR>
+     <TEXT>BDC_INSERT returncode: &amp;1 RECORD: &amp;2</TEXT>
+    </item>
+    <item>
+     <SPRSL>뱋</SPRSL>
+     <MSGNR>004</MSGNR>
+     <TEXT>BDC_CLOSE_GROUP group &amp;1 returncode: &amp;2</TEXT>
+    </item>
+    <item>
+     <SPRSL>뱋</SPRSL>
+     <MSGNR>005</MSGNR>
+     <TEXT>Processing of batch group &amp;1 triggered</TEXT>
+    </item>
+   </T100_TEXTS>
   </asx:values>
  </asx:abap>
 </abapGit>

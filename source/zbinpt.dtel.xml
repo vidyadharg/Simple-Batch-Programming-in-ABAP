@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZBINPT</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>XFELD</DOMNAME>
+    <SCRLEN2>12</SCRLEN2>
+    <SCRLEN3>30</SCRLEN3>
+    <DDTEXT>Create batch input session</DDTEXT>
+    <SCRTEXT_M>Batch input</SCRTEXT_M>
+    <SCRTEXT_L>Create batch input session</SCRTEXT_L>
+    <APPLCLASS>PINF</APPLCLASS>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>2</LANGU>
+    <LANGU>3</LANGU>
+    <LANGU>4</LANGU>
+    <LANGU>5</LANGU>
+    <LANGU>6</LANGU>
+    <LANGU>7</LANGU>
+    <LANGU>8</LANGU>
+    <LANGU>A</LANGU>
+    <LANGU>B</LANGU>
+    <LANGU>C</LANGU>
+    <LANGU>D</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>G</LANGU>
+    <LANGU>H</LANGU>
+    <LANGU>I</LANGU>
+    <LANGU>J</LANGU>
+    <LANGU>K</LANGU>
+    <LANGU>L</LANGU>
+    <LANGU>M</LANGU>
+    <LANGU>N</LANGU>
+    <LANGU>O</LANGU>
+    <LANGU>P</LANGU>
+    <LANGU>Q</LANGU>
+    <LANGU>R</LANGU>
+    <LANGU>S</LANGU>
+    <LANGU>T</LANGU>
+    <LANGU>U</LANGU>
+    <LANGU>V</LANGU>
+    <LANGU>W</LANGU>
+    <LANGU>Z</LANGU>
+    <LANGU>a</LANGU>
+    <LANGU>d</LANGU>
+    <LANGU>덆</LANGU>
+    <LANGU>묩</LANGU>
+    <LANGU>뱋</LANGU>
+    <LANGU>쁩</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>创建批输入会话</DDTEXT>
+     <SCRTEXT_M>批输入</SCRTEXT_M>
+     <SCRTEXT_L>创建批输入会话</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>2</DDLANGUAGE>
+     <DDTEXT>สร้างเซสชันการป้อนข้อมูลแบบแบทช์</DDTEXT>
+     <SCRTEXT_M>แบทช์อินพุท</SCRTEXT_M>
+     <SCRTEXT_L>สร้างเซสชันป้อนข้อมูลแบบแบทช์</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>3</DDLANGUAGE>
+     <DDTEXT>배치 입력 세션 생성</DDTEXT>
+     <SCRTEXT_M>배치 입력</SCRTEXT_M>
+     <SCRTEXT_L>배치 입력 세션 생성</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>4</DDLANGUAGE>
+     <DDTEXT>Creare sesiune batch input</DDTEXT>
+     <SCRTEXT_M>Batch input</SCRTEXT_M>
+     <SCRTEXT_L>Creare sesiune batch input</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>5</DDLANGUAGE>
+     <DDTEXT>Hitri vnos: Kreiranje mape paketnega vnosa</DDTEXT>
+     <SCRTEXT_M>Paketni vnos</SCRTEXT_M>
+     <SCRTEXT_L>Kreiranje mape paketnega vnosa</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>6</DDLANGUAGE>
+     <DDTEXT>Kreiraj sesiju serijskog unosa</DDTEXT>
+     <SCRTEXT_M>Serij. unos</SCRTEXT_M>
+     <SCRTEXT_L>Kreiraj sesiju serijskog unosa</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>7</DDLANGUAGE>
+     <DDTEXT>Create batch input session</DDTEXT>
+     <SCRTEXT_M>Batch input</SCRTEXT_M>
+     <SCRTEXT_L>Create batch input session</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>8</DDLANGUAGE>
+     <DDTEXT>Створити сеанс пакетного введення</DDTEXT>
+     <SCRTEXT_M>Пакет.введ.</SCRTEXT_M>
+     <SCRTEXT_L>Створ.сеанс пакет.введення</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>A</DDLANGUAGE>
+     <DDTEXT>إنشاء جلسة إدخال الدُفعات</DDTEXT>
+     <SCRTEXT_M>إدخال دُفعة</SCRTEXT_M>
+     <SCRTEXT_L>إنشاء جلسة إدخال الدُفعات</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>B</DDLANGUAGE>
+     <DDTEXT>יצירת מהלך קלט באצווה</DDTEXT>
+     <SCRTEXT_M>קלט באצווה</SCRTEXT_M>
+     <SCRTEXT_L>יצירת מהלך קלט באצווה</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>C</DDLANGUAGE>
+     <DDTEXT>Rychlé zadávání: Vytvoření mapy batch input</DDTEXT>
+     <SCRTEXT_M>Dávk.vstup</SCRTEXT_M>
+     <SCRTEXT_L>Vytvoření mapy batch input</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Schnellerfassung: Batch-Input-Mappe erstellen</DDTEXT>
+     <SCRTEXT_M>Batch-Input</SCRTEXT_M>
+     <SCRTEXT_L>Batch-Input-Mappe erstellen</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Saisie rapide : créer un dossier batch input</DDTEXT>
+     <SCRTEXT_M>Batch input</SCRTEXT_M>
+     <SCRTEXT_L>Créer un dossier batch input</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>G</DDLANGUAGE>
+     <DDTEXT>Δημιουργία συνόδου μαζικής εισόδου</DDTEXT>
+     <SCRTEXT_M>Μαζ.είσοδος</SCRTEXT_M>
+     <SCRTEXT_L>Δημιουργ.συνόδ.μαζ.εισόδου</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>H</DDLANGUAGE>
+     <DDTEXT>Gyorsrögzítés: Batch-input-mappa létrehozása</DDTEXT>
+     <SCRTEXT_M>Batch-input</SCRTEXT_M>
+     <SCRTEXT_L>Batch-input-mappa létrehozása</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>I</DDLANGUAGE>
+     <DDTEXT>Acquisizione rapida: creare batch-input-session</DDTEXT>
+     <SCRTEXT_M>Batch input</SCRTEXT_M>
+     <SCRTEXT_L>Creare sessione batch-input</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>J</DDLANGUAGE>
+     <DDTEXT>バッチインプットセッションの生成</DDTEXT>
+     <SCRTEXT_M>バッチ Input</SCRTEXT_M>
+     <SCRTEXT_L>バッチインプットセッション生成</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>K</DDLANGUAGE>
+     <DDTEXT>Lynregistrering: Opret batchinput-mappe</DDTEXT>
+     <SCRTEXT_M>Batch input</SCRTEXT_M>
+     <SCRTEXT_L>Opret batchinput-mappe</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>L</DDLANGUAGE>
+     <DDTEXT>Tworzenie pakietu wsadowego</DDTEXT>
+     <SCRTEXT_M>Wpr. wsadowe</SCRTEXT_M>
+     <SCRTEXT_L>Tworzenie pakietu wsadowego</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>M</DDLANGUAGE>
+     <DDTEXT>建立批次輸入工作階段</DDTEXT>
+     <SCRTEXT_M>批次輸入</SCRTEXT_M>
+     <SCRTEXT_L>建立批次輸入工作階段</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>N</DDLANGUAGE>
+     <DDTEXT>Snelinvoer: creëren van batch-inputmappen</DDTEXT>
+     <SCRTEXT_M>Batch input</SCRTEXT_M>
+     <SCRTEXT_L>Batch-inputmap creëren</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>O</DDLANGUAGE>
+     <DDTEXT>Hurtigregistrering: Opprett batch input-mappe</DDTEXT>
+     <SCRTEXT_M>Batch input</SCRTEXT_M>
+     <SCRTEXT_L>Opprett batch input-mappe</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>P</DDLANGUAGE>
+     <DDTEXT>Entrada rápida: criar pasta batch input</DDTEXT>
+     <SCRTEXT_M>Batch input</SCRTEXT_M>
+     <SCRTEXT_L>Criar pasta batch input</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>Q</DDLANGUAGE>
+     <DDTEXT>Rýchle zadávanie: Vytvorenie mapy dávkov.vstupu</DDTEXT>
+     <SCRTEXT_M>Dávk.vstup</SCRTEXT_M>
+     <SCRTEXT_L>Vytvorenie mapy dávk.vstupu</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>R</DDLANGUAGE>
+     <DDTEXT>Быстрый ввод: создать сеанс пакетного ввода</DDTEXT>
+     <SCRTEXT_M>ПакетнВвод</SCRTEXT_M>
+     <SCRTEXT_L>Создать сеанс пакетного ввода</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Entrada rápida: Crear juego de datos batch input</DDTEXT>
+     <SCRTEXT_M>Batch input</SCRTEXT_M>
+     <SCRTEXT_L>Crear juego datos batch input</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>T</DDLANGUAGE>
+     <DDTEXT>Hızlı giriş: Toplu girdi klasörü yarat</DDTEXT>
+     <SCRTEXT_M>Toplu girdi</SCRTEXT_M>
+     <SCRTEXT_L>Toplu girdi oturumu yarat</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>U</DDLANGUAGE>
+     <DDTEXT>Pikarekisteröinti: luo eräsyöttökansio</DDTEXT>
+     <SCRTEXT_M>Eräsyöttö</SCRTEXT_M>
+     <SCRTEXT_L>Luo eräsyöttökansio</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>V</DDLANGUAGE>
+     <DDTEXT>Snabbregistrering: Skapa batch input-post</DDTEXT>
+     <SCRTEXT_M>Batch input</SCRTEXT_M>
+     <SCRTEXT_L>Skapa batch input-post</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>W</DDLANGUAGE>
+     <DDTEXT>Създ.сесия на пакетен вход</DDTEXT>
+     <SCRTEXT_M>Пакетен вход</SCRTEXT_M>
+     <SCRTEXT_L>Създ.сесия на пакетен вход</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>Z</DDLANGUAGE>
+     <DDTEXT>Create batch input session</DDTEXT>
+     <SCRTEXT_M>Batch input</SCRTEXT_M>
+     <SCRTEXT_L>Create batch input session</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>a</DDLANGUAGE>
+     <DDTEXT>Create batch input session</DDTEXT>
+     <SCRTEXT_M>Batch input</SCRTEXT_M>
+     <SCRTEXT_L>Create batch input session</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>d</DDLANGUAGE>
+     <DDTEXT>Kreiraj sesiju serijskog unosa</DDTEXT>
+     <SCRTEXT_M>Serij. unos</SCRTEXT_M>
+     <SCRTEXT_L>Kreiraj sesiju serijskog unosa</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>덆</DDLANGUAGE>
+     <DDTEXT>Saisie rapide : créer un dossier batch input</DDTEXT>
+     <SCRTEXT_M>Batch input</SCRTEXT_M>
+     <SCRTEXT_L>Créer un dossier batch input</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>묩</DDLANGUAGE>
+     <DDTEXT>Create batch input session</DDTEXT>
+     <SCRTEXT_M>Batch input</SCRTEXT_M>
+     <SCRTEXT_L>Create batch input session</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>뱋</DDLANGUAGE>
+     <DDTEXT>Топтық енгізу сеансын жасау</DDTEXT>
+     <SCRTEXT_M>Топтық енг.</SCRTEXT_M>
+     <SCRTEXT_L>Топтық енгізу сеансын жасау</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>쁩</DDLANGUAGE>
+     <DDTEXT>Tạo tác vụ nhập bó</DDTEXT>
+     <SCRTEXT_M>Nhập lô</SCRTEXT_M>
+     <SCRTEXT_L>Tạo tác vụ nhập bó</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

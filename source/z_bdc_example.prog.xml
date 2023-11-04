@@ -137,6 +137,794 @@
      <LENGTH>35</LENGTH>
     </item>
    </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>7</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>E00</KEY>
+       <ENTRY>Error opening dataset, return code:</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I01</KEY>
+       <ENTRY>Create group</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I02</KEY>
+       <ENTRY>BDC_OPEN_GROUP</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I03</KEY>
+       <ENTRY>BDC_INSERT</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I04</KEY>
+       <ENTRY>BDC_CLOSE_GROUP</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I05</KEY>
+       <ENTRY>returncode:</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I06</KEY>
+       <ENTRY>Fehlermappe wurde erzeugt</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Session Name</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S02</KEY>
+       <ENTRY>User</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S03</KEY>
+       <ENTRY>Keep session</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S04</KEY>
+       <ENTRY>Lock date</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S05</KEY>
+       <ENTRY>Processing Mode</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S06</KEY>
+       <ENTRY>Update Mode</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S07</KEY>
+       <ENTRY>Create Session</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S08</KEY>
+       <ENTRY>Call transaction</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S09</KEY>
+       <ENTRY>Error sessn</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S10</KEY>
+       <ENTRY>Nodata indicator</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S11</KEY>
+       <ENTRY>Short log</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Example usage of ZCL_BDC_SESSION</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>POBJ</KEY>
+       <ENTRY>.</ENTRY>
+       <LENGTH>20</LENGTH>
+       <SPLIT>D</SPLIT>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_THRESH</KEY>
+       <ENTRY>Threshold trans per session</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>W</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>E00</KEY>
+       <ENTRY>Error opening dataset, return code:</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I01</KEY>
+       <ENTRY>Create group</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I02</KEY>
+       <ENTRY>BDC_OPEN_GROUP</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I03</KEY>
+       <ENTRY>BDC_INSERT</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I04</KEY>
+       <ENTRY>BDC_CLOSE_GROUP</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I05</KEY>
+       <ENTRY>returncode:</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I06</KEY>
+       <ENTRY>Fehlermappe wurde erzeugt</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Session Name</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S02</KEY>
+       <ENTRY>User</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S03</KEY>
+       <ENTRY>Keep session</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S04</KEY>
+       <ENTRY>Lock date</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S05</KEY>
+       <ENTRY>Processing Mode</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S06</KEY>
+       <ENTRY>Update Mode</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S07</KEY>
+       <ENTRY>Create Session</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S08</KEY>
+       <ENTRY>Call transaction</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S09</KEY>
+       <ENTRY>Error sessn</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S10</KEY>
+       <ENTRY>Nodata indicator</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S11</KEY>
+       <ENTRY>Short log</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Example usage of ZCL_BDC_SESSION</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>POBJ</KEY>
+       <ENTRY>.</ENTRY>
+       <LENGTH>20</LENGTH>
+       <SPLIT>D</SPLIT>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_THRESH</KEY>
+       <ENTRY>Threshold trans per session</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>Z</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>E00</KEY>
+       <ENTRY>Error opening dataset, return code:</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I01</KEY>
+       <ENTRY>Create group</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I02</KEY>
+       <ENTRY>BDC_OPEN_GROUP</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I03</KEY>
+       <ENTRY>BDC_INSERT</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I04</KEY>
+       <ENTRY>BDC_CLOSE_GROUP</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I05</KEY>
+       <ENTRY>returncode:</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I06</KEY>
+       <ENTRY>Fehlermappe wurde erzeugt</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Session Name</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S02</KEY>
+       <ENTRY>User</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S03</KEY>
+       <ENTRY>Keep session</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S04</KEY>
+       <ENTRY>Lock date</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S05</KEY>
+       <ENTRY>Processing Mode</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S06</KEY>
+       <ENTRY>Update Mode</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S07</KEY>
+       <ENTRY>Create Session</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S08</KEY>
+       <ENTRY>Call transaction</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S09</KEY>
+       <ENTRY>Error sessn</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S10</KEY>
+       <ENTRY>Nodata indicator</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S11</KEY>
+       <ENTRY>Short log</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Example usage of ZCL_BDC_SESSION</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>POBJ</KEY>
+       <ENTRY>.</ENTRY>
+       <LENGTH>20</LENGTH>
+       <SPLIT>D</SPLIT>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_THRESH</KEY>
+       <ENTRY>Threshold trans per session</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>a</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>E00</KEY>
+       <ENTRY>Error opening dataset, return code:</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I01</KEY>
+       <ENTRY>Create group</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I02</KEY>
+       <ENTRY>BDC_OPEN_GROUP</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I03</KEY>
+       <ENTRY>BDC_INSERT</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I04</KEY>
+       <ENTRY>BDC_CLOSE_GROUP</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I05</KEY>
+       <ENTRY>returncode:</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I06</KEY>
+       <ENTRY>Fehlermappe wurde erzeugt</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Session Name</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S02</KEY>
+       <ENTRY>User</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S03</KEY>
+       <ENTRY>Keep session</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S04</KEY>
+       <ENTRY>Lock date</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S05</KEY>
+       <ENTRY>Processing Mode</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S06</KEY>
+       <ENTRY>Update Mode</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S07</KEY>
+       <ENTRY>Create Session</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S08</KEY>
+       <ENTRY>Call transaction</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S09</KEY>
+       <ENTRY>Error sessn</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S10</KEY>
+       <ENTRY>Nodata indicator</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S11</KEY>
+       <ENTRY>Short log</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Example usage of ZCL_BDC_SESSION</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>POBJ</KEY>
+       <ENTRY>.</ENTRY>
+       <LENGTH>20</LENGTH>
+       <SPLIT>D</SPLIT>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_THRESH</KEY>
+       <ENTRY>Threshold trans per session</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>묩</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>E00</KEY>
+       <ENTRY>Error opening dataset, return code:</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I01</KEY>
+       <ENTRY>Create group</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I02</KEY>
+       <ENTRY>BDC_OPEN_GROUP</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I03</KEY>
+       <ENTRY>BDC_INSERT</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I04</KEY>
+       <ENTRY>BDC_CLOSE_GROUP</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I05</KEY>
+       <ENTRY>returncode:</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I06</KEY>
+       <ENTRY>Fehlermappe wurde erzeugt</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Session Name</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S02</KEY>
+       <ENTRY>User</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S03</KEY>
+       <ENTRY>Keep session</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S04</KEY>
+       <ENTRY>Lock date</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S05</KEY>
+       <ENTRY>Processing Mode</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S06</KEY>
+       <ENTRY>Update Mode</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S07</KEY>
+       <ENTRY>Create Session</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S08</KEY>
+       <ENTRY>Call transaction</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S09</KEY>
+       <ENTRY>Error sessn</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S10</KEY>
+       <ENTRY>Nodata indicator</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S11</KEY>
+       <ENTRY>Short log</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Example usage of ZCL_BDC_SESSION</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>POBJ</KEY>
+       <ENTRY>.</ENTRY>
+       <LENGTH>20</LENGTH>
+       <SPLIT>D</SPLIT>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_THRESH</KEY>
+       <ENTRY>Threshold trans per session</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>뱋</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>E00</KEY>
+       <ENTRY>Error opening dataset, return code:</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I01</KEY>
+       <ENTRY>Create group</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I02</KEY>
+       <ENTRY>BDC_OPEN_GROUP</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I03</KEY>
+       <ENTRY>BDC_INSERT</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I04</KEY>
+       <ENTRY>BDC_CLOSE_GROUP</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I05</KEY>
+       <ENTRY>returncode:</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>I06</KEY>
+       <ENTRY>Fehlermappe wurde erzeugt</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Session Name</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S02</KEY>
+       <ENTRY>User</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S03</KEY>
+       <ENTRY>Keep session</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S04</KEY>
+       <ENTRY>Lock date</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S05</KEY>
+       <ENTRY>Processing Mode</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S06</KEY>
+       <ENTRY>Update Mode</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S07</KEY>
+       <ENTRY>Create Session</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S08</KEY>
+       <ENTRY>Call transaction</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S09</KEY>
+       <ENTRY>Error sessn</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S10</KEY>
+       <ENTRY>Nodata indicator</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S11</KEY>
+       <ENTRY>Short log</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Example usage of ZCL_BDC_SESSION</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>POBJ</KEY>
+       <ENTRY>.</ENTRY>
+       <LENGTH>20</LENGTH>
+       <SPLIT>D</SPLIT>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_THRESH</KEY>
+       <ENTRY>Threshold trans per session</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
   </asx:values>
  </asx:abap>
 </abapGit>
